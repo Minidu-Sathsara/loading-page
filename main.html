@@ -28,13 +28,13 @@
                 <a href="#">View All Product</a>
             </div>
             <div class="imgbox">
-                <img src="/assets/images/pepsi001.png" alt="">
+                <img src="/assets/images/pepsi001.png" alt="" class="pepsi">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="/assets/images/pepsi001.png" alt=""></li>
-            <li><img src="/assets/images/pepsi002.png" alt=""></li>
-            <li><img src="/assets/images/pepsi003.png" alt=""></li>
+            <li><img src="/assets/images/pepsi001.png" onclick="imagSlider('/assets/images/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="/assets/images/pepsi002.png" onclick="imagSlider('/assets/images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="/assets/images/pepsi003.png" onclick="imagSlider('/assets/images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="/assets/images/facebook.png" alt=""></a></li>
@@ -42,5 +42,15 @@
             <li><a href="#"><img src="/assets/images/instagram.png" alt=""></a></li>
         </ul>
     </section>
+    <script type="text/javascript">
+        function imagSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
 </body>
 </html>
