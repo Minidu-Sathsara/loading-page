@@ -91,3 +91,14 @@ header ul li a{
    text-decoration: none;
    text-transform: uppercase;
 }
+.content .imgbox{
+   width: 600px;
+   display: flex;
+   padding-right: 50px;
+   margin-top: 50px;
+   justify-content: flex-end;
+}
+
+.thumb{
+    
+}
